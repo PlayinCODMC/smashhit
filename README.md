@@ -1,2 +1,2 @@
 # smashhit
-Async hit pre-processor for Bukkit
+Async hit pre-processor for Bukkit (Java 7)
