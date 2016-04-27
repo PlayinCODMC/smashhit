@@ -18,7 +18,7 @@ public class SmashHitDebugListener implements Listener {
 	public void onEntityDamageByEntityEvent(EntityDamageByEntityEvent e) {
 		if( e.getDamager() instanceof Player && e.getEntity() instanceof Player ) {
 			plugin.getLogger().info( " --- SmashHit Debug --- " );
-			plugin.getLogger().info( "Attacker: " + e.getDamager() + ", victim: " + e.getEntity() );
+			plugin.getLogger().info( "Attacker: " + e.getDamager().getName() + ", victim: " + e.getEntity().getName() );
 			plugin.getLogger().info( "Final damage: " + e.getFinalDamage() );
 		}
 	}
